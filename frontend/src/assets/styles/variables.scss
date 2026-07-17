@@ -1,0 +1,52 @@
+ // ================================================
+ // 审计驾驶舱 - 全局SCSS变量
+ // ================================================
+ 
+ // 主题色
+ $primary-color: #409eff;
+ $success-color: #67c23a;
+ $warning-color: #e6a23c;
+ $danger-color: #f56c6c;
+ $info-color: #909399;
+ 
+ // 背景色
+ $bg-color: #f0f2f5;
+ $bg-white: #ffffff;
+ $bg-dark: #1d1e1f;
+ 
+ // 文字色
+ $text-primary: #303133;
+ $text-regular: #606266;
+ $text-secondary: #909399;
+ $text-placeholder: #c0c4cc;
+ 
+ // 边框色
+ $border-color: #e4e7ed;
+ $border-light: #ebeef5;
+ $border-lighter: #f2f2f2;
+ 
+ // 阴影
+ $shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+ $shadow-md: 0 2px 8px rgba(0,0,0,0.08);
+ $shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
+ 
+ // 圆角
+ $radius-sm: 4px;
+ $radius-md: 6px;
+ $radius-lg: 8px;
+ $radius-xl: 12px;
+ 
+ // 侧边栏
+ $sidebar-width: 220px;
+ $sidebar-collapsed-width: 64px;
+ $sidebar-bg: #1d1e1f;
+ $sidebar-text: #bfcbd9;
+ $sidebar-active-text: #409eff;
+ 
+ // 导航栏
+ $header-height: 56px;
+ 
+ // Z-index层级
+ $z-sidebar: 1000;
+ $z-header: 999;
+ $z-modal: 2000;

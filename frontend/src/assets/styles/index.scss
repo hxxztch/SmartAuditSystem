@@ -1,0 +1,88 @@
+﻿@import './variables';
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px; color: $text-primary; background-color: $bg-color;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+#app { height: 100%; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c0c4cc; border-radius: 3px; &:hover { background: #909399; } }
+
+.el-card { border-radius: $radius-md; border: 1px solid $border-light; }
+.el-table { font-size: 13px; }
+.el-table th.el-table__cell { font-weight: 600; background-color: #fafafa; }
+
+.fade-enter-active, .fade-leave-active { transition: opacity 0.3s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+.slide-fade-enter-active { transition: all 0.3s ease-out; }
+.slide-fade-leave-active { transition: all 0.2s ease-in; }
+.slide-fade-enter-from { transform: translateX(20px); opacity: 0; }
+.slide-fade-leave-to { transform: translateX(-20px); opacity: 0; }
+
+// ========== Mobile Responsive (max-width: 768px) ==========
+@media (max-width: 768px) {
+  html, body { font-size: 13px; }
+
+  // Responsive tables: enable horizontal scroll
+  .el-table { overflow-x: auto !important; }
+  .el-table .el-table__body-wrapper { overflow-x: auto !important; }
+
+  // Responsive cards: full width on mobile
+  .el-card { border-radius: 6px; }
+
+  // Dialog: fullscreen on mobile
+  .el-dialog {
+    width: 92vw !important;
+    margin-top: 5vh !important;
+    .el-dialog__body { padding: 12px; }
+  }
+
+  // Form items: stack vertically
+  .el-form--inline .el-form-item {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  // Tabs: smaller font
+  .el-tabs__item { font-size: 12px; padding: 0 10px !important; }
+
+  // Pagination: compact
+  .el-pagination { justify-content: center; }
+  .el-pagination button, .el-pagination .el-pager li { min-width: 28px; height: 28px; }
+
+  // Hide breadcrumb on mobile
+  .el-breadcrumb { display: none; }
+
+  // Button group: wrap
+  .page-header { flex-direction: column; gap: 8px; align-items: flex-start; }
+
+  // Toolbar: wrap
+  .customize-toolbar { flex-wrap: wrap; gap: 6px; }
+
+  // Welcome banner: smaller
+  .welcome-banner { padding: 16px !important; h2 { font-size: 16px !important; } }
+  
+  // Stat cards: adjust
+  .stat-card { padding: 12px 8px !important; }
+  .stat-value { font-size: 22px !important; }
+
+  // View list grid: single column
+  .view-list { grid-template-columns: 1fr !important; }
+
+  // Filter card
+  .filter-card .el-form-item { margin-bottom: 4px; }
+
+  // Project list
+  .my-projects-page, .source-page, .overview-page, .category-page,
+  .role-manage, .user-permission, .temp-auth, .temp-grant, .personal-view-page, .customize-page {
+    gap: 8px !important;
+  }
+}

@@ -1,0 +1,66 @@
+ // ================================================
+ // 驾驶舱专用样式
+ // ================================================
+ 
+ .dashboard-page {
+   padding: 0;
+   height: 100%;
+ }
+ 
+ // 数据看板卡片动画
+ .data-board-item {
+   transition: all 0.25s ease;
+   &:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+   }
+ }
+ 
+ // 图表卡片统一高度
+ .chart-card {
+   .el-card__body {
+     padding: 12px;
+   }
+ }
+ 
+ // 下钻步骤条
+ .drill-steps {
+   .el-step__title {
+     font-size: 12px;
+   }
+ }
+ 
+ // 驾驶舱工具栏
+ .dashboard-toolbar {
+   .el-button + .el-button {
+     margin-left: 8px;
+   }
+ }
+ 
+ // 戴明环状态标签
+ .status-tag {
+   padding: 2px 8px;
+   border-radius: 3px;
+   font-size: 12px;
+ }
+ 
+ .status-active { color: #67c23a; background: #f0f9eb; }
+ .status-pending { color: #e6a23c; background: #fdf6ec; }
+ .status-closed { color: #909399; background: #f4f4f5; }
+ .status-danger { color: #f56c6c; background: #fef0f0; }
+ 
+ // 大屏适配
+ @media screen and (max-width: 768px) {
+   .data-board {
+     grid-template-columns: repeat(2, 1fr);
+   }
+   .widget-grid {
+     grid-template-columns: 1fr;
+   }
+ }
+ 
+ @media screen and (max-width: 480px) {
+   .data-board {
+     grid-template-columns: 1fr;
+   }
+ }

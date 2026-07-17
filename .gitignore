@@ -1,0 +1,22 @@
+# 前端
+frontend/node_modules/
+frontend/dist/
+frontend/assets/
+
+# 后端
+backend/target/
+backend/temp_build/
+backend/*.db
+backend/*.log
+backend/*.bak
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
